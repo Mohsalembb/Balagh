@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityUntilHpUser"
+    android:background="@drawable/faded_background">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="402dp"
+            android:layout_height="37dp"
+            android:background="@drawable/costum_edittext"
+            android:backgroundTint="#253EEA"
+
+            android:fontFamily="@font/almarai_bold"
+            android:text="رفع بلاغ جديد"
+            android:textAlignment="center"
+            android:textColor="#0E0000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.061" />
+
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="141dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/almarai_bold"
+            android:text="أضف نوع المشكل :"
+            android:textAlignment="viewEnd"
+            android:textColor="#020C02"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            app:layout_constraintVertical_bias="0.027" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="211dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/almarai_bold"
+            android:text="أضف وصف للمشكل :"
+            android:textAlignment="viewEnd"
+            android:textColor="#020C02"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.919"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radio"
+            app:layout_constraintVertical_bias="0.114" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="398dp"
+            android:layout_height="83dp"
+
+            android:layout_marginBottom="116dp"
+            android:background="@drawable/costum_edittext"
+            android:backgroundTint="#FAF2F2"
+            android:drawablePadding="8dp"
+            android:hint="الوصف "
+            android:inputType="textLongMessage"
+            android:padding="8dp"
+            android:textAlignment="viewEnd"
+
+            android:textColor="#0E0E0E"
+            android:textColorHighlight="@color/cardview_dark_background"
+            app:layout_constraintBottom_toTopOf="@+id/btnPickImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.936" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="140dp"
+            android:layout_height="22dp"
+            android:fontFamily="@font/almarai_bold"
+            android:text="أضف الموقع :"
+            android:textAlignment="viewEnd"
+            android:textColor="#020C02"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description"
+            app:layout_constraintVertical_bias="0.043" />
+
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="292dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/costum_edittext"
+            android:backgroundTint="#FAF2F2"
+            android:drawablePadding="8dp"
+            android:hint="قم بكتابة موقع البلاغ  "
+            android:inputType="textWebEditText"
+            android:padding="8dp"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:layout_constraintVertical_bias="0.461" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="56dp"
+            android:layout_height="33dp"
+
+            android:drawableTop="@drawable/baseline_add_location_24"
+            android:text=" "
+            android:textAlignment="center"
+            android:textColor="#E3E8E0"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/location"
+            app:layout_constraintHorizontal_bias="0.419"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.61" />
+
+        <TextView
+            android:id="@+id/btnPickImage"
+            android:layout_width="56dp"
+            android:layout_height="51dp"
+            android:drawableLeft="@drawable/baseline_camera_alt_24"
+            android:text=" "
+            android:textAlignment="center"
+            android:textColor="#E3E8E0"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.577"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.738" />
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="74dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="12dp"
+            android:text="موقعي الحالي "
+            android:textAlignment="center"
+            android:textColor="#236507"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/location"
+            app:layout_constraintHorizontal_bias="0.718"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintVertical_bias="0.045" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="158dp"
+            android:layout_height="26dp"
+            android:fontFamily="@font/almarai_bold"
+            android:text="أضف صورة للمشكل :"
+            android:textAlignment="viewEnd"
+            android:textColor="#020C02"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.936"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:layout_constraintVertical_bias="0.098" />
+
+        <LinearLayout
+            android:layout_width="396dp"
+            android:layout_height="96dp"
+            android:background="@drawable/costum_edittext"
+            android:backgroundTint="#FAF2F2"
+
+
+            app:layout_constraintBottom_toTopOf="@+id/abutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            app:layout_constraintVertical_bias="1.0">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/abutton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.546"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPickImage"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints"
+                tools:srcCompat="@tools:sample/avatars" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/abutton"
+            android:layout_width="174dp"
+            android:layout_height="49dp"
+            android:backgroundTint="#236507"
+            android:fontFamily="@font/almarai_bold"
+            android:onClick="abutton"
+            android:text="رفع البلاغ "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.976" />
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="244dp"
+            android:layout_height="52dp"
+            android:background="@drawable/costum_edittext"
+            android:backgroundTint="#FAF2F2"
+
+
+            android:orientation="horizontal"
+
+            app:layout_constraintBottom_toTopOf="@+id/description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.903"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            app:layout_constraintVertical_bias="0.252">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="121dp"
+                android:layout_height="51dp"
+                android:background="@drawable/costum_edittext"
+                android:backgroundTint="#39AA14"
+                android:text="غير مستعجلة"
+                android:textAlignment="textEnd"
+                android:textColor="#101010"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.456"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.286" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="121dp"
+                android:layout_height="51dp"
+                android:background="@drawable/costum_edittext"
+                android:backgroundTint="#E10D0D"
+                android:text=" مستعجلة"
+
+                android:textAlignment="center"
+                android:textColor="#0C0C0C"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

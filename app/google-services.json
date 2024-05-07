@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "399066321418",
+    "project_id": "fir-app-c0d79",
+    "storage_bucket": "fir-app-c0d79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399066321418:android:1da31670f8c7895cd205f3",
+        "android_client_info": {
+          "package_name": "com.android.l3sip.balagh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWeuMoi8sDsv6CIy5_EzrmgT14R5rSmiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

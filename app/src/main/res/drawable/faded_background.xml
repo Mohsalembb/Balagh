@@ -1,0 +1,15 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <color android:color="@android:color/white" />
+            </item>
+            <item>
+                <bitmap
+                    android:src="@drawable/picfc"
+                    android:alpha="0.5"
+                    android:gravity="fill" />
+            </item>
+        </layer-list>
+    </item>
+</selector>

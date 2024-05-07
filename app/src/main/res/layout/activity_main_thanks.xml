@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/faded_background"
+    tools:context=".MainActivityThanks">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="86dp"
+        android:background="@color/white"
+        android:fontFamily="@font/almarai_bold"
+        android:gravity="center"
+        android:text="تمت الإضافة بنجاح ، شكرا جزيلا على اهتمامكم."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="345dp"
+        android:layout_height="515dp"
+        android:background="@drawable/costum_edittext"
+        android:backgroundTint="#FAF2F2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.375">
+
+
+        <TextView
+            android:id="@+id/propproblem"
+            android:layout_width="155dp"
+            android:layout_height="39dp"
+            android:text="تفاصيل البلاغ"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/typeproblem1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.447"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.148" />
+
+        <TextView
+            android:id="@+id/typeproblem"
+            android:layout_width="155dp"
+            android:layout_height="39dp"
+            android:text=" نوع المشكل :"
+            android:textAlignment="center"
+            android:textColor="#00056A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@+id/typeproblem1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/propproblem"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/fotoproblem"
+            android:layout_width="155dp"
+            android:layout_height="39dp"
+            android:text="الصورة :  "
+            android:textAlignment="center"
+            android:textColor="#00056A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locaproblem1"
+            app:layout_constraintVertical_bias="0.073" />
+
+        <TextView
+            android:id="@+id/descproblem"
+            android:layout_width="155dp"
+            android:layout_height="39dp"
+            android:text=" وصف المشكل :"
+            android:textAlignment="center"
+
+            android:textColor="#00056A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.344" />
+
+        <TextView
+            android:id="@+id/locaproblem"
+            android:layout_width="155dp"
+            android:layout_height="39dp"
+            android:text=" موقع المشكل :"
+            android:textAlignment="center"
+            android:textColor="#00056A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/locaproblem1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description1"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/typeproblem1"
+            android:layout_width="316dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/almarai_bold"
+            android:text=" نوع المشكل "
+            android:textAlignment="viewEnd"
+            android:textColor="#020C02"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/descproblem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.413"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/description1"
+            android:layout_width="313dp"
+            android:layout_height="44dp"
+            android:fontFamily="@font/almarai_bold"
+            android:text=" وصف المشكل "
+            android:textAlignment="viewEnd"
+            android:textColor="#020C02"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/typeproblem1"
+            app:layout_constraintVertical_bias="0.187" />
+
+        <TextView
+            android:id="@+id/locaproblem1"
+            android:layout_width="311dp"
+            android:layout_height="46dp"
+            android:fontFamily="@font/almarai_bold"
+            android:text=" موقع المشكل "
+            android:textAlignment="viewEnd"
+            android:textColor="#020C02"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description1"
+            app:layout_constraintVertical_bias="0.37" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="142dp"
+            android:layout_height="112dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.167"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.96"
+            tools:ignore="MissingConstraints"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

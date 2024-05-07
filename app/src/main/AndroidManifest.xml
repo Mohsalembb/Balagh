@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Balagh"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Balagh"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivityThanks"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityHomePageWorker"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityHomePageUser"
+            android:exported="false" />
+        <activity
+            android:name=".MainWorkerSignup"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityUntilHpUser"
+            android:exported="false" />
+        <activity
+            android:name=".MainUserSignup"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_SIGNUP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainWorkerLogin"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.WORKER_LOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainUserLogin"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_LOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
