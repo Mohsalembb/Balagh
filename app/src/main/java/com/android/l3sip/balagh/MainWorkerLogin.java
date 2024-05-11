@@ -2,6 +2,7 @@ package com.android.l3sip.balagh;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -33,13 +34,17 @@ public class MainWorkerLogin extends AppCompatActivity {
     ProgressBar progressBar;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
+    Toolbar toolbar;
     private String Tag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_worker_login);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getColor(R.color.Blue)));
+       // getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getColor(R.color.Blue)));
+        toolbar=findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
 
         wemail=findViewById(R.id.wsignup_email);
@@ -107,7 +112,7 @@ public class MainWorkerLogin extends AppCompatActivity {
     }
 
     private void sendUserToNextAcvtivity() {
-        Intent intent=new Intent(MainWorkerLogin.this, MainActivityHomePageWorker.class);
+        Intent intent=new Intent(MainWorkerLogin.this, MainActivityUntinHPWorker.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

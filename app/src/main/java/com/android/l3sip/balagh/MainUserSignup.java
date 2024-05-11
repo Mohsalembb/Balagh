@@ -2,6 +2,8 @@ package com.android.l3sip.balagh;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
@@ -30,6 +32,7 @@ public class MainUserSignup extends AppCompatActivity {
     ProgressBar progressBar;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
+    Toolbar toolbar;
     private String Tag;
 
 
@@ -37,8 +40,11 @@ public class MainUserSignup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_user_signup);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getColor(R.color.Blue)));
+      //  getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getColor(R.color.Blue)));
 
+        toolbar=findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
 
         usignup_username=findViewById(R.id.usignup_username);

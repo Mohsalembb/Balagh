@@ -7,5 +7,496 @@
     tools:context=".MainActivityHomePageWorker"
     android:background="@drawable/faded_background">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#236297"
+     >
+
+        <RelativeLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/balagh" />
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="402dp"
+        android:layout_height="37dp"
+        android:background="@drawable/costum_edittext"
+        android:backgroundTint="#236297"
+        android:fontFamily="@font/almarai_bold"
+        android:text="البلاغات المرفوعة"
+        android:textAlignment="center"
+        android:textColor="#0E0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="36dp"
+        android:background="#F1E9E9"
+        android:backgroundTint="#FD2B2B"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/listImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picfc"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+        <TextView
+            android:id="@+id/listDate"
+            android:layout_width="83dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/listTime"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="242dp"
+            android:layout_marginBottom="19dp"
+            android:layout_toEndOf="@id/listImage"
+            android:text="02/05/2024"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listTime"
+            android:layout_width="59dp"
+            android:layout_height="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="259dp"
+            android:layout_toEndOf="@id/listImage"
+            android:text="14:22:00"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listNumber"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="20dp"
+            android:text=" بلاغ  00017-05-24 "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/listType"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:text=" تشقق في الطريق  "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:background="#F1E9E9"
+        android:backgroundTint="#FD2B2B"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.166">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/listImage2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hufra"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+        <TextView
+            android:id="@+id/listDate2"
+            android:layout_width="83dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/listTime"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="242dp"
+            android:layout_marginBottom="19dp"
+            android:layout_toEndOf="@id/listImage"
+            android:text="27/04/2024"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listTime2"
+            android:layout_width="59dp"
+            android:layout_height="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="259dp"
+            android:layout_toEndOf="@id/listImage"
+            android:text="11:50:33"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listNumber2"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="20dp"
+            android:text=" بلاغ  00016-04-24 "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/listType2"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:text=" حفر خطيرة في الطريق  "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:background="#F1E9E9"
+        android:backgroundTint="#FD2B2B"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/listImage0"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/inchigag"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+        <TextView
+            android:id="@+id/listDate0"
+            android:layout_width="83dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/listTime"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="242dp"
+            android:layout_marginBottom="19dp"
+            android:layout_toEndOf="@id/listImage"
+            android:text="20/04/2024"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listTime0"
+            android:layout_width="59dp"
+            android:layout_height="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="259dp"
+            android:layout_toEndOf="@id/listImage"
+            android:text="17:12:04"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listNumber0"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="20dp"
+            android:text=" بلاغ  00015-04-24 "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/listType0"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:text=" تشقق في الطريق  "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:background="#F1E9E9"
+        android:backgroundTint="#39AA14"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/listImage1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/matabgayr"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+        <TextView
+            android:id="@+id/listDate1"
+            android:layout_width="83dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/listTime"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="242dp"
+            android:layout_marginBottom="19dp"
+            android:layout_toEndOf="@id/listImage"
+            android:text="29/04/2024"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listTime1"
+            android:layout_width="59dp"
+            android:layout_height="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="259dp"
+            android:layout_toEndOf="@id/listImage"
+            android:text="12:30:57"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listNumber1"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="20dp"
+            android:text=" بلاغ  00014-04-24 "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/listType1"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:text=" وجود مطبات غير قانونية  "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:background="#F1E9E9"
+        android:backgroundTint="#39AA14"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/listImage5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/matab"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+        <TextView
+            android:id="@+id/listDate5"
+            android:layout_width="83dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/listTime"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="242dp"
+            android:layout_marginBottom="19dp"
+            android:layout_toEndOf="@id/listImage"
+            android:text="14/04/2024"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listTime5"
+            android:layout_width="59dp"
+            android:layout_height="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="259dp"
+            android:layout_toEndOf="@id/listImage"
+            android:text="10:44:30"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listNumber5"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="20dp"
+            android:text=" بلاغ  00013-04-24 "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/listType5"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:text=" مطب بدون إشارة  "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

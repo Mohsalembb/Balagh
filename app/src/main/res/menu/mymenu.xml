@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/home"
-        android:title="Home" />
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        app:showAsAction="always"/>
     <item
-        android:id="@+id/aboutas"
-        android:title="About As" />
-    <item
-        android:id="@+id/share"
-        android:title="Share" />
+        android:id="@+id/profile"
+        android:title="الملف الشخصي" />
 
     <item
-        android:id="@+id/exit"
-        android:title="Exit" />
+        android:id="@+id/setting"
+        android:title="الإعدادات"
+        android:icon="@drawable/baseline_settings_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/help"
+        android:title="المساعدة والدعم" />
+    <item
+        android:id="@+id/logout"
+        android:title="تسجيل الخروج" />
+    <item
+        android:id="@+id/terms"
+        android:title="الشروط والأحكام " />
 </menu>

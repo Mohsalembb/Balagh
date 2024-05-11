@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Balagh"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivityUntinHPWorker"
+            android:exported="false" />
+        <activity
             android:name=".MainActivityThanks"
             android:exported="false" />
         <activity

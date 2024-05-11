@@ -5,6 +5,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,10 +21,11 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class MainActivityHomePageUser extends AppCompatActivity {
 
-    TextView btnPickImage;
+    TextView btnPickImage1;
     ImageView imageView;
     ImageView image;
     ActivityResultLauncher<Intent> resultLauncher;
@@ -33,21 +35,26 @@ public class MainActivityHomePageUser extends AppCompatActivity {
     Uri uri;
     RadioGroup radio;
     RadioButton radioButton1;
+    Toolbar toolbar;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_home_page_user);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getColor(R.color.Blue)));
+        //getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getColor(R.color.Blue)));
         abutton=findViewById(R.id.abutton);
         description=findViewById(R.id.description);
         location=findViewById(R.id.location);
         radioButton=findViewById(R.id.radioButton);
         radioButton2=findViewById(R.id.radioButton2);
         radio=findViewById(R.id.radio);
+        toolbar=findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        
+
+
 
         abutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,10 +81,10 @@ public class MainActivityHomePageUser extends AppCompatActivity {
 
 
 
-        btnPickImage = findViewById(R.id.btnPickImage);
+        btnPickImage1 = findViewById(R.id.btnPickImage1);
         imageView = findViewById(R.id.imageView);
 
-        btnPickImage.setOnClickListener(new View.OnClickListener() {
+        btnPickImage1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent();
@@ -101,5 +108,9 @@ public class MainActivityHomePageUser extends AppCompatActivity {
 
     }
 
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.mymenu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 }
